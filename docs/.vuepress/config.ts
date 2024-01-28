@@ -30,13 +30,17 @@ export default defineUserConfig({
       {
         text: '联系我',
         children: [
-          {
-            text: 'B站',
-            link: 'https://www.bilibili.com'
-          },
+          // {
+          //   text: 'B站',
+          //   link: 'https://space.bilibili.com/15710950'
+          // },
           {
             text: '微博',
-            link: 'https://www.weibo.com'
+            link: 'https://weibo.com/u/3924104690'
+          },
+          {
+            text: 'Instagram',
+            link: 'https://www.instagram.com/lebennington'
           },
           // {
           //   text: 'Active on /foo/',
