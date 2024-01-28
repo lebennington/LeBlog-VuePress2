@@ -8,7 +8,7 @@ export default defineUserConfig({
     searchPlugin({
       locales: {
         '/': {
-          placeholder: '你想找什么',
+          placeholder: '`Alt + S` 搜索',
         },
       },
       maxSuggestions: 10,
