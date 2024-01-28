@@ -25,3 +25,4 @@ footer: MIT Licensed | Powered by <a href="https://v2.vuepress.vuejs.org/">VuePr
 
 # Hello VuePress <Badge type="tip" text="v2" vertical="middle" />
 
+啊啊啊
