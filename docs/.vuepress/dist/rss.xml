@@ -6,21 +6,23 @@
     <link>https://blog.lebennington.com/</link>
     <description>LeBennington 的第一个 VuePress 博客</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 15 Apr 2024 12:16:51 GMT</pubDate>
-    <lastBuildDate>Mon, 15 Apr 2024 12:16:51 GMT</lastBuildDate>
+    <pubDate>Mon, 15 Apr 2024 12:24:02 GMT</pubDate>
+    <lastBuildDate>Mon, 15 Apr 2024 12:24:02 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
-      <title>Zotero 的安装</title>
-      <link>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85.html</link>
-      <guid>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85.html</guid>
-      <source url="https://blog.lebennington.com/rss.xml">Zotero 的安装</source>
-      <description>Zotero 7 官方链接： aa 随便写写 bb 喂喂喂</description>
-      <content:encoded><![CDATA[<p>Zotero 7 官方链接：</p>
-<h2>aa</h2>
-<p>随便写写</p>
-<h2>bb</h2>
-<p>喂喂喂</p>
+      <title>归档</title>
+      <link>https://blog.lebennington.com/archive/</link>
+      <guid>https://blog.lebennington.com/archive/</guid>
+      <source url="https://blog.lebennington.com/rss.xml">归档</source>
+      <description>Zotero Calibre 科研 杂学 日常</description>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>Zotero</h2>
+<p><a href="/zotero/" target="_blank">Zotero 使用手册</a></p>
+<h2>Calibre</h2>
+<h2>科研</h2>
+<h2>杂学</h2>
+<h2>日常</h2>
 ]]></content:encoded>
     </item>
     <item>
@@ -29,6 +31,7 @@
       <guid>https://blog.lebennington.com/zotero/zotero%E5%AF%BC%E5%87%BA%E7%AC%94%E8%AE%B0.html</guid>
       <source url="https://blog.lebennington.com/rss.xml">Zotero 导出笔记</source>
       <description>1. 通过 zotero-integration 插件生成 obsidian 笔记 使用插件的优点： 自定义笔记模板（[[T-a-My Import Zotero Note|参考模板]]），方便排版； 自动在 obsidian 中存档 md 格式的文献阅读笔记。 1.1 操作 在 zotero 中对文献进行注释； 在 obsidian 中 Ctrl+P...</description>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2><a class="header-anchor" href="#_1-通过-zotero-integration-插件生成-obsidian-笔记"><span>1. 通过 </span></a><a href="https://github.com/mgmeyers/obsidian-zotero-integration" target="_blank" rel="noopener noreferrer">zotero-integration</a> 插件生成 obsidian 笔记</h2>
 <p>使用插件的优点：</p>
 <ul>
@@ -49,11 +52,26 @@
       <enclosure url="https://article.biliimg.com/bfs/article/013fac0ef5d3ec0ff87d0d1585ac42c62f9bd19c.png" type="image/png"/>
     </item>
     <item>
+      <title>Zotero 的安装</title>
+      <link>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85.html</link>
+      <guid>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85.html</guid>
+      <source url="https://blog.lebennington.com/rss.xml">Zotero 的安装</source>
+      <description>Zotero 7 官方链接： aa 随便写写 bb 喂喂喂</description>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Zotero 7 官方链接：</p>
+<h2>aa</h2>
+<p>随便写写</p>
+<h2>bb</h2>
+<p>喂喂喂</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>为什么需要文献管理</title>
       <link>https://blog.lebennington.com/zotero/</link>
       <guid>https://blog.lebennington.com/zotero/</guid>
       <source url="https://blog.lebennington.com/rss.xml">为什么需要文献管理</source>
       <description>文献对所有科研工作者而言， 都是获取知识与研究领域动态的重要途径。 若非生活于上世纪，大家的电脑里都有或多或少的电子文献， 那么在此先提一个问题，你如何在电脑中存放这些文献？ 悉数堆积在一起，或是归档于不同分类的子文件夹，这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。 或许这样的方式对你来说已经足够， 但如果耐心看看这本手册， 相信你会有不...</description>
+      <pubDate>Wed, 24 Jan 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>文献对所有科研工作者而言，<br>
 都是获取知识与研究领域动态的重要途径。<br>
 若非生活于上世纪，大家的电脑里都有或多或少的电子文献，<br>
@@ -62,20 +80,6 @@
 或许这样的方式对你来说已经足够，<br>
 但如果耐心看看这本手册，<br>
 相信你会有不一样的想法。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>归档</title>
-      <link>https://blog.lebennington.com/archive/</link>
-      <guid>https://blog.lebennington.com/archive/</guid>
-      <source url="https://blog.lebennington.com/rss.xml">归档</source>
-      <description>Zotero Calibre 科研 杂学 日常</description>
-      <content:encoded><![CDATA[<h2>Zotero</h2>
-<p><a href="/zotero/" target="_blank">Zotero 使用手册</a></p>
-<h2>Calibre</h2>
-<h2>科研</h2>
-<h2>杂学</h2>
-<h2>日常</h2>
 ]]></content:encoded>
     </item>
   </channel>
