@@ -38,7 +38,7 @@ export default defineUserConfig({
       rss: true,
       devServer: true,
       hostname: "blog.lebennington.com",
-      channel: { pubDate: new Date("2022-01-01T00:00:00+08:00") },
+      channel: { pubDate: new Date() },
     }),
   ],
   bundler: viteBundler(),
@@ -108,3 +108,5 @@ export default defineUserConfig({
     lastUpdatedText: "最近更新",
   }),
 });
+
+// const pubDate = new Date();
