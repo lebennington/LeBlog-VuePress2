@@ -1,6 +1,6 @@
 ---
 title: "归档"
-date: 2024-01-26
+date:
 sidebarDepth: 2
 pageClass:
 sidebar: ["/archive/"]
