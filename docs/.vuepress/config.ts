@@ -38,7 +38,15 @@ export default defineUserConfig({
       rss: true,
       devServer: true,
       hostname: "blog.lebennington.com",
-      channel: { pubDate: new Date() },
+      channel: {
+        // pubDate: new Date(),
+        ttl: 1440,
+        author: {
+          name: "LeBenningon",
+          email: "lebennington@outlokk.com",
+        },
+        copyright: "",
+      },
     }),
   ],
   bundler: viteBundler(),
