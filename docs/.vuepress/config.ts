@@ -43,9 +43,8 @@ export default defineUserConfig({
         ttl: 1440,
         author: {
           name: "LeBenningon",
-          email: "lebennington@outlokk.com",
+          email: "lebennington@outlook.com",
         },
-        copyright: "",
       },
     }),
   ],
