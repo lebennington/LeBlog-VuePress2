@@ -7,7 +7,7 @@ tagline: Life is short, get at it.
 pageClass:
 actions:
   - text: 为什么建立这个博客?
-    link:
+    link: /
     type: primary
   # - text: Zotero 使用说明
   #   link: /zotero/
