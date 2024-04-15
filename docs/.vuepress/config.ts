@@ -9,7 +9,7 @@ import { feedPlugin } from "@vuepress/plugin-feed";
 
 export default defineUserConfig({
   lang: "zh-CN",
-  title: " LeBennington's Archive ",
+  title: "LeBennington's Archive",
   description: "LeBennington 的第一个 VuePress 博客",
   plugins: [
     searchPlugin({
@@ -21,6 +21,7 @@ export default defineUserConfig({
       maxSuggestions: 10,
       // isSearchable: (page) => page.path !== '/',  // 排除首页
       getExtraFields: (page) => page.frontmatter.tags ?? [], // 允许搜索 Frontmatter 中的 `tags`
+      hotKeys: [{ key: "s", alt: true }],
     }),
     mdEnhancePlugin({
       gfm: true,
@@ -37,6 +38,7 @@ export default defineUserConfig({
       rss: true,
       devServer: true,
       hostname: "blog.lebennington.com",
+      channel: { pubDate: new Date("2022-01-01T00:00:00+08:00") },
     }),
   ],
   bundler: viteBundler(),
@@ -106,10 +108,3 @@ export default defineUserConfig({
     lastUpdatedText: "最近更新",
   }),
 });
-
-export interface HotKeyOptions {
-  key: "S";
-  alt: true;
-  ctrl: false;
-  shift: false;
-}
