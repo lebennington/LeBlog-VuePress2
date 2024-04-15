@@ -9,8 +9,8 @@ import { feedPlugin } from "@vuepress/plugin-feed";
 
 export default defineUserConfig({
   lang: "zh-CN",
-  title: "LeBennington's Archive",
-  description: "LeBennington 的第一个 VuePress 博客",
+  title: "LeBennington's Blog",
+  description: "基于 VuePress 2",
   plugins: [
     searchPlugin({
       locales: {
@@ -40,6 +40,7 @@ export default defineUserConfig({
       hostname: "blog.lebennington.com",
       channel: {
         // pubDate: new Date(),
+        title: "LeBennington's Blog",
         ttl: 1440,
         author: {
           name: "LeBenningon",
