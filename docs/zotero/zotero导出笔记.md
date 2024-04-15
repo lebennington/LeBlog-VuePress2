@@ -113,3 +113,8 @@ pageClass:
 
 > [!note] 注意
 > 在[[T-从注释中添加笔记|从注释中添加笔记的模板]]中，不能像[[T-a-My Import Zotero Note|插件模板]]一样设置成 `colorCategory == 'Blue'`，必须设置成 `color == '#2ea8e5'`
+
+这是一个脚注 [^1]。
+这也是一个脚注^[参考文献 2]
+
+[^1]: 参考文献 1

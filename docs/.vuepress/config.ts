@@ -2,8 +2,15 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { copyCodePlugin } from "@vuepress/plugin-copy-code";
+import { photoSwipePlugin } from "@vuepress/plugin-photo-swipe";
+import { feedPlugin } from "@vuepress/plugin-feed";
 
 export default defineUserConfig({
+  lang: "zh-CN",
+  title: " LeBennington's Archive ",
+  description: "LeBennington 的第一个 VuePress 博客",
   plugins: [
     searchPlugin({
       locales: {
@@ -15,8 +22,25 @@ export default defineUserConfig({
       // isSearchable: (page) => page.path !== '/',  // 排除首页
       getExtraFields: (page) => page.frontmatter.tags ?? [], // 允许搜索 Frontmatter 中的 `tags`
     }),
+    mdEnhancePlugin({
+      gfm: true,
+      figure: true,
+      imgLazyload: true,
+      hint: true,
+      alert: true,
+    }),
+    copyCodePlugin({
+      showInMobile: true,
+    }),
+    photoSwipePlugin({}),
+    feedPlugin({
+      rss: true,
+      devServer: true,
+      hostname: "blog.lebennington.com",
+    }),
   ],
   bundler: viteBundler(),
+  markdown: {},
   theme: defaultTheme({
     hostname: "lebennington.com",
     navbar: [
@@ -81,10 +105,6 @@ export default defineUserConfig({
     lastUpdated: true,
     lastUpdatedText: "最近更新",
   }),
-
-  lang: "zh-CN",
-  title: " LeBennington's Archive ",
-  description: "LeBennington 的第一个 VuePress 博客",
 });
 
 export interface HotKeyOptions {
