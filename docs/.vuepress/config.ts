@@ -61,8 +61,9 @@ export default defineUserConfig({
       "/zotero/": [
         {
           text: "Zotero 使用手册",
-          collapsible: true,
-          children: ["introduction", "zotero1", "zotero2"],
+          link: "/zotero/",
+          // collapsible: true,
+          children: ["zotero的安装", "zotero导出笔记"],
         },
       ],
     },
