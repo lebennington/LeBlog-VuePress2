@@ -18,7 +18,7 @@ export default defineUserConfig({
           placeholder: "Alt + S",
         },
       },
-      maxSuggestions: 10,
+      maxSuggestions: 50,
       // isSearchable: (page) => page.path !== '/',  // 排除首页
       getExtraFields: (page) => page.frontmatter.tags ?? [], // 允许搜索 Frontmatter 中的 `tags`
       hotKeys: [{ key: "s", alt: true }],
@@ -40,7 +40,6 @@ export default defineUserConfig({
       hostname: "blog.lebennington.com",
       channel: {
         // pubDate: new Date(),
-        title: "LeBennington's Blog",
         ttl: 1440,
         author: {
           name: "LeBenningon",
@@ -116,5 +115,3 @@ export default defineUserConfig({
     lastUpdatedText: "最近更新",
   }),
 });
-
-// const pubDate = new Date();
