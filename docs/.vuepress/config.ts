@@ -25,7 +25,7 @@ export default defineUserConfig({
     //   hotKeys: [{ key: "s", alt: true }],
     // }),
     docsearchPlugin({
-      apiKey: "c1730218177ce509fab623e77f63dbea",
+      apiKey: "b80b684913b3d1657fde8cb11a68ccab",
       indexName: "lebennington",
       appId: "HC8W0OC4M9",
     }),
