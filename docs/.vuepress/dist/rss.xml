@@ -6,8 +6,8 @@
     <link>https://blog.lebennington.com/</link>
     <description>基于 VuePress 2</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 16 Apr 2024 02:34:06 GMT</pubDate>
-    <lastBuildDate>Tue, 16 Apr 2024 02:34:06 GMT</lastBuildDate>
+    <pubDate>Tue, 16 Apr 2024 04:16:30 GMT</pubDate>
+    <lastBuildDate>Tue, 16 Apr 2024 04:16:30 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by LeBenningon</copyright>
@@ -59,17 +59,11 @@
       <link>https://blog.lebennington.com/zotero/</link>
       <guid>https://blog.lebennington.com/zotero/</guid>
       <source url="https://blog.lebennington.com/rss.xml">为什么需要文献管理</source>
-      <description>文献对所有科研工作者而言， 都是获取知识与研究领域动态的重要途径。 若非生活于上世纪，大家的电脑里都有或多或少的电子文献， 那么在此先提一个问题，你如何在电脑中存放这些文献？ 悉数堆积在一起，或是归档于不同分类的子文件夹，这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。 或许这样的方式对你来说已经足够， 但如果耐心看看这本手册， 相信你会有不...</description>
+      <description>文献对所有科研工作者而言， 都是获取知识与研究领域动态的重要途径。 若非生活于上世纪，大家的电脑里都有或多或少的电子文献， 那么在此先提一个问题，你如何在电脑中存放这些文献？ 悉数堆积在一起，或是归档于不同分类的子文件夹，这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。 或许这样的方式对你来说已经足够， 但如果你了解了 Zotero， 相信你...</description>
       <author>lebennington@outlook.com (LeBenningon)</author>
       <pubDate>Wed, 24 Jan 2024 07:41:02 GMT</pubDate>
-      <content:encoded><![CDATA[<p>文献对所有科研工作者而言，<br>
-都是获取知识与研究领域动态的重要途径。<br>
-若非生活于上世纪，大家的电脑里都有或多或少的电子文献，<br>
-那么在此先提一个问题，你如何在电脑中存放这些文献？</p>
-<p>悉数堆积在一起，或是归档于不同分类的子文件夹，这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。<br>
-或许这样的方式对你来说已经足够，<br>
-但如果耐心看看这本手册，<br>
-相信你会有不一样的想法。</p>
+      <content:encoded><![CDATA[<p>文献对所有科研工作者而言， 都是获取知识与研究领域动态的重要途径。 若非生活于上世纪，大家的电脑里都有或多或少的电子文献， 那么在此先提一个问题，你如何在电脑中存放这些文献？</p>
+<p>悉数堆积在一起，或是归档于不同分类的子文件夹，这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。 或许这样的方式对你来说已经足够， 但如果你了解了 Zotero， 相信你会有不一样的想法。</p>
 ]]></content:encoded>
     </item>
     <item>
