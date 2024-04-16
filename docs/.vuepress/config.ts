@@ -1,7 +1,8 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
-import { searchPlugin } from "@vuepress/plugin-search";
+// import { searchPlugin } from "@vuepress/plugin-search";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "@vuepress/plugin-copy-code";
 import { photoSwipePlugin } from "@vuepress/plugin-photo-swipe";
@@ -12,16 +13,21 @@ export default defineUserConfig({
   title: "LeBennington's Blog",
   description: "基于 VuePress 2",
   plugins: [
-    searchPlugin({
-      locales: {
-        "/": {
-          placeholder: "Alt + S",
-        },
-      },
-      maxSuggestions: 50,
-      // isSearchable: (page) => page.path !== '/',  // 排除首页
-      getExtraFields: (page) => page.frontmatter.tags ?? [], // 允许搜索 Frontmatter 中的 `tags`
-      hotKeys: [{ key: "s", alt: true }],
+    // searchPlugin({
+    //   locales: {
+    //     "/": {
+    //       placeholder: "Alt + S",
+    //     },
+    //   },
+    //   maxSuggestions: 50,
+    //   // isSearchable: (page) => page.path !== '/',  // 排除首页
+    //   getExtraFields: (page) => page.frontmatter.tags ?? [], // 允许搜索 Frontmatter 中的 `tags`
+    //   hotKeys: [{ key: "s", alt: true }],
+    // }),
+    docsearchPlugin({
+      apiKey: "c1730218177ce509fab623e77f63dbea",
+      indexName: "lebennington",
+      appId: "HC8W0OC4M9",
     }),
     mdEnhancePlugin({
       gfm: true,
