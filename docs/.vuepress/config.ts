@@ -7,6 +7,14 @@ import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { copyCodePlugin } from "@vuepress/plugin-copy-code";
 import { photoSwipePlugin } from "@vuepress/plugin-photo-swipe";
 import { feedPlugin } from "@vuepress/plugin-feed";
+// import { readingTimePlugin } from "@vuepress/plugin-reading-time";
+import anchorPlugin from "markdown-it-anchor";
+import { removeHtmlExtensionPlugin } from "vuepress-plugin-remove-html-extension";
+
+// const anchorOptions = {
+//   level: [1, 2, 3, 4, 5, 6],
+//   permalink: anchorPlugin.permalink.headerLink(),
+// };
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -31,10 +39,15 @@ export default defineUserConfig({
     // }),
     mdEnhancePlugin({
       gfm: true,
-      figure: true,
+      // figure: true,
       imgLazyload: true,
       hint: true,
       alert: true,
+      sub: true,
+      sup: true,
+      obsidianImgSize: true,
+      mark: true,
+      katex: true,
     }),
     copyCodePlugin({
       showInMobile: true,
@@ -53,9 +66,20 @@ export default defineUserConfig({
         },
       },
     }),
+    // readingTimePlugin({}),
+    removeHtmlExtensionPlugin(),
   ],
   bundler: viteBundler(),
-  markdown: {},
+  markdown: {
+    // 和 theme.themePlugins.activeHeaderLinks 同步修改
+    // anchor: {
+    //   level: anchorOptions.level,
+    //   permalink: anchorOptions.permalink,
+    // },
+    code: {
+      lineNumbers: 5,
+    },
+  },
   theme: defaultTheme({
     hostname: "lebennington.com",
     navbar: [
@@ -106,18 +130,21 @@ export default defineUserConfig({
         },
       ],
     },
+    // sidebar: "auto",
     sidebarDepth: 2,
-
     // editLink: true,
     // editLinkPattern: ':repo',
     // editLinkText: '编辑此页',
 
-    // colorMode: 'auto',
-    // colorModeSwitch: true,
     logo: "/images/logo.ico",
     logoDark: "/images/logoDark.ico",
 
     lastUpdated: true,
     lastUpdatedText: "最近更新",
+
+    themePlugins: {
+      mediumZoom: false,
+      // activeHeaderLinks: true, //与 plugins.markdown.anchor 同步修改
+    },
   }),
 });

@@ -28,12 +28,9 @@ pageClass:
 [Zotero Integration 插件说明 - 飞书云文档 (feishu.cn)](https://f8lfn9zs2l.feishu.cn/docx/doxcno0YluQMgtsNTj3SsaOr9Sd)  
 [Nunjucks 中文文档 (bootcss.com)](https://nunjucks.bootcss.com/templating.html#for)
 
----
-
 ## 2. 手动从注释中添加笔记
 
 主要功能：
-
 1. 将笔记导入 word 文档，进一步形成文献汇报 PPT；
 2. 直接在 obsidian 中存档 md 格式的文献阅读笔记；
 
@@ -74,10 +71,10 @@ pageClass:
 1. 清除所有文本的格式；
 2. 按需求设置各级标题格式；
 
-   > [!note] 注意
-   > 正文需设置为三级标题，否则无法在 PPT 中正常显示。
+> [!note] 注意
+> 正文需设置为三级标题，否则无法在 PPT 中正常显示。
 
-3. 点击 `快速访问工具栏` 中的 `发送到 Microsoft PowerPoint` 图标： ![image.png](https://article.biliimg.com/bfs/article/84b77730bd80521b683817d614081d717b47b15b.png) （需要在 `文件>选项>快速访问工具栏` 中将该功能添加至 `自定义快速访问工具栏`）；
+3. 点击 `快速访问工具栏` 中的 `发送到 Microsoft PowerPoint`^[需要在 `文件>选项>快速访问工具栏` 中将该功能添加至 `自定义快速访问工具栏`] 图标： ![image.png](https://article.biliimg.com/bfs/article/84b77730bd80521b683817d614081d717b47b15b.png) （）；
 
 #### PPT 中进行的操作：
 
@@ -100,8 +97,6 @@ pageClass:
 [科研生产力：一个视频学会 zotero&Obsidian 模板设置.pdf - 飞书云文档 (feishu.cn)](https://f8lfn9zs2l.feishu.cn/file/boxcnuNLlu5dKnYcflCT6DwQHjf)  
 [Nunjucks 中文文档 (bootcss.com)](https://nunjucks.bootcss.com/templating.html#for)
 
----
-
 ## 批注规定
 
 在文献阅读时，需依照如下规定进行批注（可根据个人喜好自定义）：
@@ -115,7 +110,38 @@ pageClass:
 > [!note] 注意
 > 在[[T-从注释中添加笔记|从注释中添加笔记的模板]]中，不能像[[T-a-My Import Zotero Note|插件模板]]一样设置成 `colorCategory == 'Blue'`，必须设置成 `color == '#2ea8e5'`
 
-这是一个脚注 [^1]。
-这也是一个脚注^[参考文献 2]
 
-[^1]: 参考文献 1
+---
+以下是测试内容：
+$$ [ - {\lambda_1}{{k_1}^2} - ({\lambda_1} + 2{\mu_1}){{k_{py1}}^2}]{A_{p1}} + [ - {\lambda_1}{{k_1}^2} - ({\lambda_1} + 2{\mu_1}){{k_{py1}}^2}]{B_{p1}} + 2{\mu_1}{k_1}{k_{sy1}}{A_{sj}} - 2{\mu_1}{k_1}{k_{sy1}}{B_{sj}}= 0$$
+
+H~2~O
+
+![WH|60](https://theme-hope-assets.vuejs.press/logo.svg)
+
+
+<!-- 选项卡 -->
+:::: code-group
+::: code-group-item FOO
+```ts 
+const foo = 'foo'
+```
+:::
+::: code-group-item BAR
+```ts
+const bar = 'bar'
+```
+:::
+::::
+
+
+<!-- 无法自定义标题 -->
+> [!caution]  
+> 不能自定义标题的 GFM 警告
+
+<!-- 可以自定义标题 -->
+::: warning 自定义标题
+可以自定义标题的提示容器
+:::
+
+啊大大==这是lhy自定义的荧光笔标记==阿斯顿撒旦撒

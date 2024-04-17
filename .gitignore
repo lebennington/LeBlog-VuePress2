@@ -4,3 +4,4 @@ pnpm-lock.yaml
 .temp
 # VuePress 默认缓存目录
 .cache
+.prettierignore

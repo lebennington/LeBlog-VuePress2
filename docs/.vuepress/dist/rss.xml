@@ -6,16 +6,16 @@
     <link>https://blog.lebennington.com/</link>
     <description>基于 VuePress 2</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 16 Apr 2024 04:16:30 GMT</pubDate>
-    <lastBuildDate>Tue, 16 Apr 2024 04:16:30 GMT</lastBuildDate>
+    <pubDate>Wed, 17 Apr 2024 13:49:13 GMT</pubDate>
+    <lastBuildDate>Wed, 17 Apr 2024 13:49:13 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>Copyright by LeBenningon</copyright>
     <ttl>1440</ttl>
     <item>
       <title>Zotero 的安装</title>
-      <link>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85.html</link>
-      <guid>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85.html</guid>
+      <link>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85</link>
+      <guid>https://blog.lebennington.com/zotero/zotero%E7%9A%84%E5%AE%89%E8%A3%85</guid>
       <source url="https://blog.lebennington.com/rss.xml">Zotero 的安装</source>
       <description>Zotero 7 官方链接： aa 随便写写 bb 喂喂喂</description>
       <author>lebennington@outlook.com (LeBenningon)</author>
@@ -29,8 +29,8 @@
     </item>
     <item>
       <title>Zotero 导出笔记</title>
-      <link>https://blog.lebennington.com/zotero/zotero%E5%AF%BC%E5%87%BA%E7%AC%94%E8%AE%B0.html</link>
-      <guid>https://blog.lebennington.com/zotero/zotero%E5%AF%BC%E5%87%BA%E7%AC%94%E8%AE%B0.html</guid>
+      <link>https://blog.lebennington.com/zotero/zotero%E5%AF%BC%E5%87%BA%E7%AC%94%E8%AE%B0</link>
+      <guid>https://blog.lebennington.com/zotero/zotero%E5%AF%BC%E5%87%BA%E7%AC%94%E8%AE%B0</guid>
       <source url="https://blog.lebennington.com/rss.xml">Zotero 导出笔记</source>
       <description>1. 通过 zotero-integration 插件生成 obsidian 笔记 使用插件的优点： 自定义笔记模板（[[T-a-My Import Zotero Note|参考模板]]），方便排版； 自动在 obsidian 中存档 md 格式的文献阅读笔记。 1.1 操作 在 zotero 中对文献进行注释； 在 obsidian 中 Ctrl+P...</description>
       <author>lebennington@outlook.com (LeBenningon)</author>
@@ -51,6 +51,94 @@
 <a href="https://zhuanlan.zhihu.com/p/553864286" target="_blank" rel="noopener noreferrer">Obsidian 插件-Obsidian-Zotero-Integration - 知乎 (zhihu.com)</a><br>
 <a href="https://f8lfn9zs2l.feishu.cn/docx/doxcno0YluQMgtsNTj3SsaOr9Sd" target="_blank" rel="noopener noreferrer">Zotero Integration 插件说明 - 飞书云文档 (feishu.cn)</a><br>
 <a href="https://nunjucks.bootcss.com/templating.html#for" target="_blank" rel="noopener noreferrer">Nunjucks 中文文档 (bootcss.com)</a></p>
+<h2>2. 手动从注释中添加笔记</h2>
+<p>主要功能：</p>
+<ol>
+<li>将笔记导入 word 文档，进一步形成文献汇报 PPT；</li>
+<li>直接在 obsidian 中存档 md 格式的文献阅读笔记；</li>
+</ol>
+<h3>2.0 基础设置</h3>
+<p>在 zotero 工具栏点击 <code>编辑&gt;首选项</code>；</p>
+<ul>
+<li>zotero 6.0
+<ul>
+<li>点击 <code>高级&gt;高级设置：编辑器</code></li>
+<li>点击 <code>I accept the risk!</code>（取消勾选复选框后，以后便可忽略此步骤）</li>
+</ul>
+</li>
+<li>zotero 7.0
+<ul>
+<li>点击 <code>高级</code>, 滑到最下点击 <code>编辑器 </code></li>
+</ul>
+</li>
+</ul>
+<p>搜索 <code>extensions.zotero.annotations.noteTemplates.highlight</code>，并双击条目；<br>
+粘贴[[T-从注释中添加笔记|模板]]内容，关闭所有对话框即完成基础设置。</p>
+<h3>2.1 生成笔记</h3>
+<p>在文献中做好注释后，按下图操作即可在 zotero 中直接形成自定义格式的笔记；<br>
+<img src="https://article.biliimg.com/bfs/article/d4ff5659809f72a5850f61b260f7d7e012d2aabe.png" alt="image.png" loading="lazy"><br>
+右键单击文献条目，点击 <code>从注释中添加笔记</code>。<br>
+<img src="https://article.biliimg.com/bfs/article/5fb68768bc5c020aec332f744e3c8c62c365a7eb.png" alt="image.png" loading="lazy"><br>
+条目下将自动生成笔记<br>
+<img src="https://article.biliimg.com/bfs/article/48198144401576641cb800bd26e2cfe8475feb19.png" alt="image.png" loading="lazy"><br>
+点击笔记，右侧边栏将显示笔记内容<br>
+如下图所示，在笔记编辑页面点击右上角三点，可选择 <code>显示/隐藏注释颜色/引注 </code>。</p>
+<ul>
+<li>若 <code>显示注释颜色</code> ，复制粘贴笔记内容至 word 后，可保留注释颜色。</li>
+<li>若 <code>显示注释引注</code> ，可通过后续操作在 md 文件中生成打开原文并定位注释的超链接（见 [[zotero导出笔记#2.3 在 obsidian 中存档|2.3]]）。<br>
+<img src="https://article.biliimg.com/bfs/article/b9df5af26db618992f611ed8091e9a64a029bca8.png" alt="image.png" loading="lazy"></li>
+</ul>
+<h3>2.2 形成文献汇报 PPT</h3>
+<p>首先将笔记内容从 zotero 复制至 word 文档。</p>
+<h4>word 中进行的操作：</h4>
+<ol>
+<li>清除所有文本的格式；</li>
+<li>按需求设置各级标题格式；</li>
+</ol>
+<blockquote>
+<p>[!note] 注意<br>
+正文需设置为三级标题，否则无法在 PPT 中正常显示。</p>
+</blockquote>
+<ol start="3">
+<li>点击 <code>快速访问工具栏</code> 中的 <code>发送到 Microsoft PowerPoint</code><sup class="footnote-ref"><a href="#footnote1">[1]</a><a class="footnote-anchor" id="footnote-ref1"></a></sup><a class="footnote-anchor" id="footnote-ref1"> 图标： <img src="https://article.biliimg.com/bfs/article/84b77730bd80521b683817d614081d717b47b15b.png" alt="image.png" loading="lazy"> （）；</a></li><a class="footnote-anchor" id="footnote-ref1">
+</a></ol><a class="footnote-anchor" id="footnote-ref1">
+</a><h4><a class="footnote-anchor" id="footnote-ref1"></a><a class="header-anchor" href="#ppt-中进行的操作"><span>PPT 中进行的操作：</span></a></h4>
+<p>按喜好调整母版、排版、动画即可</p>
+<blockquote>
+<p>[!tip] PPT 使用窍门<br>
+若单页显示内容太多，可点击文本框，将鼠标移至右下角选择 <code>将文本拆分到两个幻灯片</code><br>
+<img src="https://article.biliimg.com/bfs/article/6212cdfef3d1528d1c41a162461719bd9ff50af7.png" alt="image.png" loading="lazy"></p>
+</blockquote>
+<h3>2.3 在 obsidian 中存档</h3>
+<p>右键单击笔记，选择 <code>导出笔记</code>；<br>
+<img src="https://article.biliimg.com/bfs/article/9a7cfb7f97d5260b4790c4c321f22ccc781b848e.png" alt="image.png" loading="lazy"><br>
+在弹出对话框中单击 <code>OK</code>（默认勾选的 <code>包括Zotero链接</code> 复选框可在 md 文件中生成打开原文并定位注释的链接）；<br>
+<img src="https://article.biliimg.com/bfs/article/0d95f3c2c5bf250f3193f4d7cfd4311a32411189.png" alt="image.png" loading="lazy"><br>
+操作完成，接下来就可以将导出的 md 文件加入 obsidian 库进行存档。<br>
+示例：[[zotero自带“导出笔记”示例]]</p>
+<p>参考资料：<br>
+<a href="https://f8lfn9zs2l.feishu.cn/file/boxcnuNLlu5dKnYcflCT6DwQHjf" target="_blank" rel="noopener noreferrer">科研生产力：一个视频学会 zotero&amp;Obsidian 模板设置.pdf - 飞书云文档 (feishu.cn)</a><br>
+<a href="https://nunjucks.bootcss.com/templating.html#for" target="_blank" rel="noopener noreferrer">Nunjucks 中文文档 (bootcss.com)</a></p>
+<h2>批注规定</h2>
+<p>在文献阅读时，需依照如下规定进行批注（可根据个人喜好自定义）：</p>
+<ul>
+<li>黄色 <code>#ffd400</code> 及其他颜色 : 普通文本；</li>
+<li>红色 <code>#ff6666</code> : 块引用形式的重要定义，并用链接标注定义的概念；</li>
+<li>绿色 <code>#5fb236</code> : 说明重点的加粗文本，如方法等；</li>
+<li>蓝色 <code>#2ea8e5</code> : 三级标题；</li>
+<li>紫色 <code>#a28ae5</code> : 四级标题。</li>
+</ul>
+<blockquote>
+<p>[!note] 注意<br>
+在[[T-从注释中添加笔记|从注释中添加笔记的模板]]中，不能像[[T-a-My Import Zotero Note|插件模板]]一样设置成 <code>colorCategory == 'Blue'</code>，必须设置成 <code>color == '#2ea8e5'</code></p>
+</blockquote>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="footnote1" class="footnote-item"><p>需要在 <code>文件&gt;选项&gt;快速访问工具栏</code> 中将该功能添加至 <code>自定义快速访问工具栏</code> <a href="#footnote-ref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 ]]></content:encoded>
       <enclosure url="https://article.biliimg.com/bfs/article/013fac0ef5d3ec0ff87d0d1585ac42c62f9bd19c.png" type="image/png"/>
     </item>
@@ -59,11 +147,20 @@
       <link>https://blog.lebennington.com/zotero/</link>
       <guid>https://blog.lebennington.com/zotero/</guid>
       <source url="https://blog.lebennington.com/rss.xml">为什么需要文献管理</source>
-      <description>文献对所有科研工作者而言， 都是获取知识与研究领域动态的重要途径。 若非生活于上世纪，大家的电脑里都有或多或少的电子文献， 那么在此先提一个问题，你如何在电脑中存放这些文献？ 悉数堆积在一起，或是归档于不同分类的子文件夹，这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。 或许这样的方式对你来说已经足够， 但如果你了解了 Zotero， 相信你...</description>
+      <description>文献对所有科研工作者而言， 都是获取知识与研究领域动态的重要途径。 若非生活于上世纪， 大家的电脑里都有或多或少的电子文献， 那么在此先提一个问题， 你如何在电脑中存放这些文献？ 悉数堆积在一起， 或是归档于不同分类的子文件夹， 这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。 或许这样的方式对你来说已经足够， 但如果你了解了 Zotero，...</description>
       <author>lebennington@outlook.com (LeBenningon)</author>
       <pubDate>Wed, 24 Jan 2024 07:41:02 GMT</pubDate>
-      <content:encoded><![CDATA[<p>文献对所有科研工作者而言， 都是获取知识与研究领域动态的重要途径。 若非生活于上世纪，大家的电脑里都有或多或少的电子文献， 那么在此先提一个问题，你如何在电脑中存放这些文献？</p>
-<p>悉数堆积在一起，或是归档于不同分类的子文件夹，这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。 或许这样的方式对你来说已经足够， 但如果你了解了 Zotero， 相信你会有不一样的想法。</p>
+      <content:encoded><![CDATA[<p>文献对所有科研工作者而言，<br>
+都是获取知识与研究领域动态的重要途径。<br>
+若非生活于上世纪，<br>
+大家的电脑里都有或多或少的电子文献，<br>
+那么在此先提一个问题，<br>
+你如何在电脑中存放这些文献？</p>
+<p>悉数堆积在一起，<br>
+或是归档于不同分类的子文件夹，<br>
+这是仅依赖于系统资源管理器情况下最常见的两种文献管理方式。<br>
+或许这样的方式对你来说已经足够，<br>
+但如果你了解了 Zotero， 相信你会有不一样的想法。</p>
 ]]></content:encoded>
     </item>
     <item>

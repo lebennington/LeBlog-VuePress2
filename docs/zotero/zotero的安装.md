@@ -6,6 +6,12 @@ search: true
 tags:
   - Zotero
 pageClass:
+prev:
+  text: 简介
+  link: /zotero/README.md
+next:
+  text: 导出笔记
+  link: /zotero/zotero导出笔记.html
 ---
 
 Zotero 7 官方链接：
