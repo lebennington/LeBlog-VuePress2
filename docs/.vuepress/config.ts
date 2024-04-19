@@ -8,7 +8,7 @@ import { copyCodePlugin } from "@vuepress/plugin-copy-code";
 import { photoSwipePlugin } from "@vuepress/plugin-photo-swipe";
 import { feedPlugin } from "@vuepress/plugin-feed";
 // import { readingTimePlugin } from "@vuepress/plugin-reading-time";
-import anchorPlugin from "markdown-it-anchor";
+// import anchorPlugin from "markdown-it-anchor";
 import { removeHtmlExtensionPlugin } from "vuepress-plugin-remove-html-extension";
 
 // const anchorOptions = {
